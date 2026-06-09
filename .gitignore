@@ -1,0 +1,54 @@
+# ========================
+# GlobalKokan — .gitignore
+# ========================
+
+# ── CodeIgniter framework core (not your code — install via download) ──
+/system/
+
+# ── CodeIgniter offline user guide (framework docs, not project files) ──
+/user_guide/
+
+# ── DB credentials — copy database.php.example → database.php and fill in ──
+application/config/database.php
+
+# ── Runtime / cache / logs ──
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+# ── AdminLTE admin template (third-party library — install separately) ──
+assets/admin/
+
+# ── User-uploaded media ──
+assets/upload/*
+!assets/upload/.gitkeep
+
+# ── Error logs ──
+error_log
+*.log
+
+# ── Composer ──
+/vendor/
+composer.lock
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+
+# ── IDE / editor ──
+.idea/
+.vscode/
+/nbproject/
+*.sublime-workspace
+*.sublime-project
+
+# ── PHP / Sublime cache ──
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# ── Test output ──
+/tests/tests/
+/tests/results/
